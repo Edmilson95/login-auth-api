@@ -21,25 +21,23 @@
     <code>git clone https://github.com/Edmilson95/login-auth-api.git</code></li>
   
   <li><strong>Registro de Usuário</strong>: Faça uma solicitação POST para o endpoint <code>/register</code> com o seguinte JSON no corpo da solicitação:<br>
-    {
+    <pre>{
     "name": "Edmilson",
     "email": "edmilson@gmail.com",
     "password": "123456789"
-    }
+    }</pre>
     A API retornará um código 200 OK e um token JWT para autenticação.</li>
   
   <li><strong>Login de Usuário</strong>: Faça uma solicitação POST para o endpoint <code>/login</code> com o seguinte JSON no corpo da solicitação:<br>
-    {
+    <pre>{
     "email": "edmilson@gmail.com",
     "password": "123456789"
-    }
+    }</pre>
     Se as credenciais estiverem corretas, a API retornará um código 200 OK e um token JWT também.</li>
+  
+  <li><strong>Testando a Autenticação</strong>: Após o login bem-sucedido, faça uma solicitação GET para o endpoint <code>/user</code> com o token JWT gerado no cabeçalho de autorização da requisição, utilizando o prefixo Bearer.<br>
     
-    Testando a Autenticação: Após o login bem-sucedido, faça uma solicitação GET para o endpoint <code>/user</code> com o token JWT gerado no corpo da requisição, utilizando o prefixo Bearer. Certifique-se de incluir o token no seguinte formato:<br>
-    {
-    "Authorization": "Bearer seu-token-jwt"
-    }
-    Se tudo estiver configurado corretamente, a resposta será "Suuuuuuuuuucesso!" com um código de status 200 OK.</li>   
+    Se tudo estiver configurado corretamente, a resposta será "Suuuuuuuuuucesso!" com um código de status 200 OK.</li>
 </ol>
 
 <h2>Ambiente de Desenvolvimento</h2>
