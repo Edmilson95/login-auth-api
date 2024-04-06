@@ -35,7 +35,7 @@
     }
     Se as credenciais estiverem corretas, a API retornará um código 200 OK e um token JWT também.</li>
     
-    <li><strong>Testando a Autenticação</strong>: Após o login bem-sucedido, faça uma solicitação GET para o endpoint <code>/user</code> com o token JWT gerado no corpo da requisição, utilizando o prefixo Bearer. Certifique-se de incluir o token no seguinte formato:<br>
+    Testando a Autenticação: Após o login bem-sucedido, faça uma solicitação GET para o endpoint <code>/user</code> com o token JWT gerado no corpo da requisição, utilizando o prefixo Bearer. Certifique-se de incluir o token no seguinte formato:<br>
     {
     "Authorization": "Bearer seu-token-jwt"
     }
